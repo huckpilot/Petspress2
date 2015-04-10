@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<body>
+  <h1>Inidividual Pet Page</h1>
+  <!-- display information about this partucular pet -->
+  <p><%= thisPet.name %> is a <%= thisPet.type %>.</p>
+  <!-- This is a link to go back to the home page -->
+  <a href="/pets">Go back to the pet list</a>
+  </br>
+  <a href="/pet/<%= thisPet.id %>/edit">Update this pet here</a>
+  </br>
+  <form method="POST" action="/pet/<%= thisPet.id %>?_method=DELETE">
+    <button>Bury your dead critter</button>
+  </form>
+</body>
+</html>

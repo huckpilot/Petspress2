@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+  <!-- Update form -->
+  <h3>Update <%= thisPet.name %> here:</h3>
+  <form method="POST" action="/pet/<%= thisPet.id %>?_method=PUT">
+    <input type="text" name="name" placeholder="<%= thisPet.name %>" required>
+    <input type="text" name="type" placeholder="<%= thisPet.type %>" required>
+    <button>Your pet has magically transformed!</button>
+  </form>
+</body>
+</html>

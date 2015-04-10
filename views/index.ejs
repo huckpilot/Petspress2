@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+<h1>Petulance</h1>
+<ul>
+<!-- loop through the keys of an object, use those keys on each instance of pets and use those instance's attributes to populate the page --> 
+  <% Object.keys(pets).forEach(function(key){ %>
+  <li><a href="/pet/<%= pets[key].id %>"><%= pets[key].name %></a> is a <%= pets[key].type %> with an id of <%= pets[key].id %></li><% }) %>
+</ul>
+<a href="/pets/new">Make a new pet here</a>
+</body>
+</html>
